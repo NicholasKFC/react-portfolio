@@ -1,0 +1,346 @@
+html {
+	scroll-behavior: smooth;
+	overflow-x: hidden;
+	max-width: 100%;
+}
+
+body {
+	font-family: "Poppins", sans-serif;
+	max-width: 100%;
+}
+
+h1 {
+	font-size: 3rem;
+}
+
+h2 {
+	font-weight: 600;
+}
+
+h2:hover {
+	color: turquoise;
+	transition: 0.2s ease;
+}
+
+hr {
+	background-color: turquoise;
+	border: 0;
+	width: 60px;
+	margin: 25px 0;
+}
+
+hr:not([size]) {
+	height: 3px;
+}
+
+header {
+	width: 100%;
+	height: 100vh;
+	background: linear-gradient(-45deg, #0d1c22, #274752, #356377);
+	background-size: 300% 300%;
+	animation: gradient 5s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+header .first-half {
+	color: white;
+	transition: 0.5s ease;
+}
+
+header .second-half {
+	color: turquoise;
+	transition: 0.5s ease;
+}
+
+header h1:hover .first-half {
+	color: turquoise;
+	transition: 0.5s ease;
+}
+
+header h1:hover .second-half {
+	color: white;
+	transition: 0.5s ease;
+}
+
+.navbar {
+	background: #0f2027;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	z-index: 1;
+	box-shadow: 0px 1px 10px 0px black;
+	padding: 0.5rem 1rem;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+	color: white;
+	margin: 0 10px;
+}
+
+.navbar-dark .navbar-nav .nav-link:focus,
+.navbar-dark .navbar-nav .nav-link:hover {
+	color: turquoise;
+	transition: 0.4s linear;
+}
+
+#about-me {
+	background: #f5f5f5;
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+}
+
+#about-me img {
+	width: 25%;
+	clip-path: circle(45% at 50% 50%);
+	overflow: hidden;
+}
+
+#about-me p {
+	width: 50%;
+}
+
+#about-me button {
+	background: transparent;
+	margin: 10px 0px 0px 0px;
+	outline: none;
+	border: 2px solid black;
+	padding: 5px 20px;
+}
+
+#about-me button:hover {
+	background: turquoise;
+	border: 2px solid turquoise;
+	transition: 0.3s linear;
+}
+
+#career-summary {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+}
+
+#philosophy-statement {
+	background: #f5f5f5;
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+}
+
+#contact {
+	background: #f5f5f5;
+	margin-top: 40px;
+	width: 100%;
+	height: 100%;
+}
+
+#contact input {
+	background: rgb(141, 216, 208);
+	border: none;
+
+	margin-bottom: 5px;
+	outline: none;
+	padding: 10px 15px;
+	width: 100%;
+	border-radius: 5px;
+}
+
+#contact input:focus {
+	border-color: #9ecaed;
+	box-shadow: 0 0 8px #9ecaed;
+}
+
+#contact textarea {
+	background: rgb(141, 216, 208);
+	border: none;
+
+	margin-bottom: 5px;
+	outline: none;
+	padding: 10px 15px;
+	width: 100%;
+	min-height: 150px;
+	max-height: 250px;
+	border-radius: 5px;
+}
+
+#contact textarea:focus {
+	border-color: #9ecaed;
+	box-shadow: 0 0 8px #9ecaed;
+}
+
+#contact button {
+	background: transparent;
+
+	margin: 20px 0px 0px 0px;
+	outline: none;
+	border: 2px solid black;
+	padding: 10px 30px;
+}
+
+#contact button:hover {
+	background: turquoise;
+	border: 2px solid turquoise;
+	transition: 0.3s linear;
+}
+
+#contact .map-div {
+	height: 600px;
+}
+
+#skills {
+	background: #f5f5f5;
+	margin-top: 40px;
+	width: 100%;
+	height: 100%;
+}
+
+#skills .progress {
+	height: 30px;
+}
+
+#awards {
+	background: #f5f5f5;
+	margin-top: 40px;
+	width: 100%;
+	height: 100%;
+}
+
+#awards h5 {
+	width: 80%;
+	margin: 25px auto;
+}
+
+#academicstudy {
+	background: #f5f5f5;
+	margin-top: 40px;
+	width: 100%;
+	height: 100%;
+}
+
+#academicstudy .edutext {
+	margin-bottom: 70px;
+}
+
+#academicstudy a {
+	color: rgb(61, 212, 197);
+}
+
+#worksample {
+	background: #f5f5f5;
+	margin-top: 40px;
+	width: 100%;
+	height: 100%;
+}
+
+#worksample .box {
+	position: relative;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+
+#worksample h4 {
+	border: 3px solid white;
+	padding: 10px 20px;
+}
+
+#worksample img {
+	display: block;
+}
+
+#worksample .box .hover-text2 {
+	color: white;
+	background: rgba(52, 180, 167, 0.9);
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	padding: 15px;
+	top: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	opacity: 0;
+}
+
+#worksample .box:hover .hover-text2 {
+	opacity: 1;
+	transition: 0.2s ease;
+}
+
+footer {
+	background: #0f2027;
+}
+
+footer li {
+	margin: 0px 15px 0px 15px;
+}
+
+footer .icon-list {
+	text-align: center;
+}
+
+.fa-facebook,
+.fa-instagram,
+.fa-google,
+.fa-linkedin,
+.fa-github {
+	color: white;
+}
+
+.facebook-icon:hover .fa-facebook,
+.instagram-icon:hover .fa-instagram,
+.google-icon:hover .fa-google,
+.linkedin-icon:hover .fa-linkedin,
+.github-icon:hover .fa-github {
+	color: rgb(52, 180, 167);
+	transition: 0.2s linear;
+}
+
+@media (max-width: 768px) {
+	#about-me img {
+		width: 50%;
+	}
+
+	#about-me p {
+		width: 50%;
+	}
+
+	#contact .map-div {
+		height: 400px;
+	}
+}
+
+::selection {
+	color: white;
+	background: black;
+}
+
+::-webkit-scrollbar {
+	width: 8px;
+}
+
+::-webkit-scrollbar-track {
+	background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+	background: turquoise;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: rgb(52, 180, 167);
+}
